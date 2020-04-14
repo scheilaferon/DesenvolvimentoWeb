@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <script>
+        function _GET(name){
+            var url   = window.location.search.replace("?", "");
+            var itens = url.split("&");
+            for(n in itens){
+                if( itens[n].match(name) ){
+                    return decodeURIComponent(itens[n].replace(name+"=", ""));
+                }
+            }
+            return null;
+     }
+    </script>
+</head>
+<body>
+    <p><script>document.write(_GET(0)); </script></p>
+    <p ><script>document.write(_GET(1)); </script></p>
+    <p ><script>document.write(_GET(2)); </script></p>
+    <p ><script>document.write(_GET(3)); </script></p>
+    <p ><script>document.write(_GET(4)); </script></p>
+</body>
+</html>

@@ -160,3 +160,42 @@ body.internas{
     border-top:#af3434 1px solid;
     color: #000;
 }
+
+/* CONTATO */
+#contato main section{
+    width:98%;
+    margin:20px;   
+}
+
+#contato form fieldset{
+    border:0;
+    padding:0;
+}
+
+#contato form legend{
+   font-size:14px;
+   font-weight: bold;
+}
+
+#contato input, 
+#contato textarea,
+#contato select{
+    border-radius:5px;
+    border: #CCC 1px solid;
+    width:300px;
+    padding:4px;
+    resize: none;
+}
+
+#contato input[type='submit']{
+    background-color:#c94c4c;
+    color:#fff;
+    font-weight:bold;
+    border: #c94c4c 1px solid;
+}
+
+#contato input[type=text]:focus,
+#contato textarea:focus,
+#contato select:focus {
+    border: #c94c4c 1px solid;
+  }

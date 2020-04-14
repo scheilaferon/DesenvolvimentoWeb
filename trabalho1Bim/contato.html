@@ -7,9 +7,9 @@
     <script src="scripts/w3-include-HTML.js"></script>
     <title>Desenvolvimento Web 1 - Aluno</title>
 </head>
-<body class="internas">
+<body id="contato" class="internas">
     <header>
-        <span>Desenvolvimento Web 1 - Contato</span>
+        <h1>Desenvolvimento Web 1</h1>
     </header>
     <nav>
         <ul>
@@ -18,17 +18,41 @@
             <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
-
     <main>
-        <aside>
-            <span>Barra lateral</span>
-        </aside>
-
         <section>
-            <span>principal</span>
+            <form action="contato_resposta.html" method="get">
+                <fieldset>
+                    <legend>Formulário de Contato</legend>
+                    <p> 
+                        <label for="fnome">Nome:</label><br />
+                        <input type="text" id="fnome" name="fnome" required>
+                    </p>
+                    <p> 
+                        <label for="email">E-mail:</label><br />
+                        <input type="text" id="email" name="email" placeholder="exemplo@exemplo.com.br" required>
+                    </p>
+                    <p> 
+                        <label for="telefone">Telefone:</label><br />
+                        <input type="text" id="telefone" name="telefone" placeholder="(41)9999-9999" required>
+                    </p>
+                    <p> 
+                        <label for="prioridade">Prioridade:</label><br />
+                        <select id="prioridade" name="prioridade" required>
+                            <option value="">Selecione</option>
+                            <option value="alta">Alta</option>
+                            <option value="media">Média</option>
+                            <option value="baixa">Baixa</option>
+                        </select>
+                    </p>
+                    <p> 
+                        <label for="mensagem">Mensagem:</label><br />
+                        <textarea name="mensagem" id="mensagem" rows="3" required></textarea>
+                    </p>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+               </form>
         </section>
     </main>
-
     <footer>
         <span>Desenvolvido por: Scheila Feron - 2020</span>
     </footer>
