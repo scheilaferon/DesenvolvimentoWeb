@@ -4,11 +4,21 @@ body{
     font-family: verdana, arial, helvetica;
 }
 
-
-header{
+h1{
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
+    margin:0;
+}
+
+h2{
+    font-size: 14px;
+    padding-bottom:10px;
+    border-bottom:#000 1px dotted;
+
+}
+
+header{
     height:40px;
     line-height: 40px;
     padding:20px;
@@ -29,6 +39,7 @@ nav li {
     padding:0 2px;
     font-size:14px;
 }
+
 nav li a {
     line-height: 30px;
     padding:5px 10px;
@@ -40,7 +51,7 @@ main {
     font-size:12px;
 }
 
-main p span {
+main span {
     font-weight: bold;
     
 }
@@ -73,7 +84,7 @@ body#index{
     background-color:#c94c4c;
 }
 
-#index header{
+#index h1{
     color: #FFF;
 }
 
@@ -124,6 +135,25 @@ body.internas{
     background-color: #ff0000;
     color:#FFF;
     border:#ff0000 1px solid;
+}
+
+.internas main aside{
+    text-align:center;
+}
+
+.internas main img{
+    height:90px;
+    border-radius: 50px;
+
+}
+
+.internas main ul {
+    list-style: nome;
+}
+
+.internas main li {
+    display: inline-block;
+    padding-right: 30px;;
 }
 
 .internas footer{
