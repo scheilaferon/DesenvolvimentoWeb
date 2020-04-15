@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <script src="scripts/w3-include-HTML.js"></script>
     <title>Desenvolvimento Web 1 - Aluno</title>
 </head>
 <body id="contato" class="internas">
@@ -23,25 +22,14 @@
             <form action="contato_resposta.html" method="get">
                 <fieldset>
                     <legend>Formulário de Contato</legend>
-                    <p> 
-                        <label for="fnome">Nome:</label><br />
-                        <input type="text" id="fnome" name="fnome" required>
-                    </p>
-                    <p> 
-                        <label for="email">E-mail:</label><br />
-                        <input type="text" id="email" name="email" placeholder="exemplo@exemplo.com.br" required>
-                    </p>
-                    <p> 
-                        <label for="telefone">Telefone:</label><br />
-                        <input type="text" id="telefone" name="telefone" placeholder="(41)9999-9999" required>
-                    </p>
+                   
                     <p> 
                         <label for="prioridade">Prioridade:</label><br />
                         <select id="prioridade" name="prioridade" required>
                             <option value="">Selecione</option>
-                            <option value="alta">Alta</option>
-                            <option value="media">Média</option>
-                            <option value="baixa">Baixa</option>
+                            <option id="alta" value="alta">Alta</option>
+                            <option id="media" value="media">Média</option>
+                            <option id="baixa" value="baixa">Baixa</option>
                         </select>
                     </p>
                     <p> 
