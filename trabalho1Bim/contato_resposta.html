@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="scripts/jquery-3.5.0.min.js"></script>
     <script type="text/javascript" src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="style/style.css">
     <title>Contato</title>
 </head>
-<body>
-    <script>
-        var url = location.search.slice(1);
-        var itens = url.split("&");
-        var array = {};
-
-        itens.forEach(function (item) {
-            var tituloValor = item.split('=');
-            var titulo = tituloValor[0];
-            var valor = tituloValor[1];
-            array[titulo] = valor;
-        });
-        console.log(array);
-    </script>
+<body id="contato" class="internas">
+    <header id="header"></header>
+    <nav id="nav"></nav>
+    <main>
+        <section>
+            <script>
+                var url = location.search.slice(1);
+                var itens = url.split("&");
+                var array = {};
+        
+                itens.forEach(function (item) {
+                    var tituloValor = item.split('=');
+                    var titulo = tituloValor[0];
+                    var valor = tituloValor[1];
+                    array[titulo] = valor;
+                });
+                console.log(array);
+            </script>
+        </section>
+    </main>
+    <footer id="footer"></footer>
 </body>
 </html>

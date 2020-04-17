@@ -6,7 +6,7 @@
     <script type="text/javascript" src="scripts/jquery-3.5.0.min.js"></script>
     <script type="text/javascript" src="scripts/scripts.js"></script>
     <link rel="stylesheet" href="style/style.css">
-    <title>Desenvolvimento Web 1 - Aluno</title>
+    <title>Contato</title>
 </head>
 <body id="contato" class="internas">
     <header id="header"></header>
@@ -17,12 +17,24 @@
                 <fieldset>
                     <legend>Formulário de Contato</legend>
                     <p> 
+                        <label for="fnome">Nome:</label><br />
+                        <input type="text" id="fnome" name="fnome" required>
+                    </p>
+                    <p> 
+                        <label for="email">E-mail:</label><br />
+                        <input type="text" id="email" name="email" placeholder="exemplo@exemplo.com.br" required>
+                    </p>
+                    <p> 
+                        <label for="telefone">Telefone:</label><br />
+                        <input type="text" id="telefone" name="telefone" placeholder="(41)9999-9999" required>
+                    </p>
+                    <p> 
                         <label for="prioridade">Prioridade:</label><br />
                         <select id="prioridade" name="prioridade" required>
                             <option value="">Selecione</option>
-                            <option id="alta" value="alta">Alta</option>
-                            <option id="media" value="media">Média</option>
-                            <option id="baixa" value="baixa">Baixa</option>
+                            <option value="alta">Alta</option>
+                            <option value="media">Média</option>
+                            <option value="baixa">Baixa</option>
                         </select>
                     </p>
                     <p> 
