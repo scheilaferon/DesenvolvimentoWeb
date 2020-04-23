@@ -22,7 +22,7 @@
                         var tituloValor = itens.split('=');
                         var titulo = tituloValor[0];
                         var valor = tituloValor[1];
-                        document.write("<li>"+titulo.toUpperCase()+" = "+unescape(valor).replace(/\n/g, '<br>')+"</li>");
+                        document.write("<li>"+titulo.toUpperCase()+" = "+decodeURIComponent(valor).replace(/[+]/g, " ")+"</li>");
                     });
                 </script>
             </ul>
