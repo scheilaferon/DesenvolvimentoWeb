@@ -6,6 +6,7 @@
     <script type="text/javascript" src="scripts/jquery-3.5.0.min.js"></script>
     <script type="text/javascript" src="scripts/scripts.js"></script>
     <link rel="stylesheet" href="style/style.css">
+     
     <title>Contato</title>
 </head>
 <body id="contato" class="internas">
@@ -13,19 +14,18 @@
     <nav id="nav"></nav>
     <main>
         <section>
-            <script>
-                var url = location.search.slice(1);
-                var itens = url.split("&");
-                var array = {};
-        
-                itens.forEach(function (item) {
-                    var tituloValor = item.split('=');
-                    var titulo = tituloValor[0];
-                    var valor = tituloValor[1];
-                    array[titulo] = valor;
-                });
-                console.log(array);
-            </script>
+            <ul id="form_result">
+                <script>
+                    var url = location.search.slice(1);
+                    var itensUrl = url.split("&");
+                    itensUrl.forEach(function(itens) {
+                        var tituloValor = itens.split('=');
+                        var titulo = tituloValor[0];
+                        var valor = tituloValor[1];
+                        document.write("<li>"+titulo.toUpperCase()+" = "+unescape(valor).replace(/\n/g, '<br>')+"</li>");
+                    });
+                </script>
+            </ul>
         </section>
     </main>
     <footer id="footer"></footer>

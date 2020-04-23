@@ -199,3 +199,7 @@ body.internas{
 #contato select:focus {
     border: #c94c4c 1px solid;
   }
+
+#form_result li {
+    display:block;
+}
